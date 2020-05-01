@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-extension Color{
+extension Color {
     static let accent = Color("accent")
     static let background = Color("bg")
     static let darkShadow = Color("darkShadow")

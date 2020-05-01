@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		C931E3AD2452C52600B47EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C931E3AC2452C52600B47EC2 /* Assets.xcassets */; };
 		C931E3B02452C52600B47EC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C931E3AF2452C52600B47EC2 /* Preview Assets.xcassets */; };
 		C931E3B32452C52600B47EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C931E3B12452C52600B47EC2 /* LaunchScreen.storyboard */; };
+		C9E3483A245BA24C006F2461 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C9E34839245BA24C006F2461 /* KeychainSwift */; };
+		C9E3483C245BA2C7006F2461 /* AuthKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3483B245BA2C7006F2461 /* AuthKeys.swift */; };
+		C9E3483E245BA30E006F2461 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3483D245BA30E006F2461 /* User.swift */; };
+		C9E34840245BC5D5006F2461 /* BiometricButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3483F245BC5D5006F2461 /* BiometricButtonLabel.swift */; };
 		C9FA439B245AAFF900A19E7D /* NeumorphicEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA439A245AAFF900A19E7D /* NeumorphicEffect.swift */; };
 		C9FA439E245AB05700A19E7D /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA439D245AB05700A19E7D /* ColorExtensions.swift */; };
 		C9FA43A1245AB1EC00A19E7D /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA43A0245AB1EC00A19E7D /* AuthenticationView.swift */; };
@@ -26,7 +30,7 @@
 		C9FA43B6245AB61E00A19E7D /* AccountCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA43B5245AB61E00A19E7D /* AccountCreationView.swift */; };
 		C9FA43B8245AC1EF00A19E7D /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA43B7245AC1EF00A19E7D /* AuthenticationManager.swift */; };
 		C9FA43BD245AC2C800A19E7D /* FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA43BC245AC2C800A19E7D /* FormValidation.swift */; };
-		C9FA43BF245AC42100A19E7D /* PasswordConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA43BE245AC42100A19E7D /* PasswordConfig.swift */; };
+		C9FA43BF245AC42100A19E7D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA43BE245AC42100A19E7D /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,9 @@
 		C931E3AF2452C52600B47EC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C931E3B22452C52600B47EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C931E3B42452C52600B47EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E3483B245BA2C7006F2461 /* AuthKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKeys.swift; sourceTree = "<group>"; };
+		C9E3483D245BA30E006F2461 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C9E3483F245BC5D5006F2461 /* BiometricButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricButtonLabel.swift; sourceTree = "<group>"; };
 		C9FA439A245AAFF900A19E7D /* NeumorphicEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicEffect.swift; sourceTree = "<group>"; };
 		C9FA439D245AB05700A19E7D /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		C9FA43A0245AB1EC00A19E7D /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
@@ -51,7 +58,7 @@
 		C9FA43B5245AB61E00A19E7D /* AccountCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreationView.swift; sourceTree = "<group>"; };
 		C9FA43B7245AC1EF00A19E7D /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		C9FA43BC245AC2C800A19E7D /* FormValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidation.swift; sourceTree = "<group>"; };
-		C9FA43BE245AC42100A19E7D /* PasswordConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordConfig.swift; sourceTree = "<group>"; };
+		C9FA43BE245AC42100A19E7D /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E3483A245BA24C006F2461 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				C9FA43B5245AB61E00A19E7D /* AccountCreationView.swift */,
+				C9E3483F245BC5D5006F2461 /* BiometricButtonLabel.swift */,
 				C9FA43A7245AB25E00A19E7D /* LCButton.swift */,
 				C9FA43AC245AB29E00A19E7D /* LoginView.swift */,
 				C9FA43A5245AB24200A19E7D /* PasswordField.swift */,
@@ -149,8 +158,9 @@
 			isa = PBXGroup;
 			children = (
 				C9FA43B7245AC1EF00A19E7D /* AuthenticationManager.swift */,
+				C9E3483B245BA2C7006F2461 /* AuthKeys.swift */,
 				C9FA43AA245AB28000A19E7D /* HapticFeedback.swift */,
-				C9FA43BE245AC42100A19E7D /* PasswordConfig.swift */,
+				C9FA43BE245AC42100A19E7D /* Config.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -170,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				C9FA43BC245AC2C800A19E7D /* FormValidation.swift */,
+				C9E3483D245BA30E006F2461 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -190,6 +201,9 @@
 			dependencies = (
 			);
 			name = LastPass;
+			packageProductDependencies = (
+				C9E34839245BA24C006F2461 /* KeychainSwift */,
+			);
 			productName = LastPass;
 			productReference = C931E3A32452C52300B47EC2 /* LastPass.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +232,9 @@
 				Base,
 			);
 			mainGroup = C931E39A2452C52300B47EC2;
+			packageReferences = (
+				C9E34838245BA24C006F2461 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = C931E3A42452C52300B47EC2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -245,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9FA43BF245AC42100A19E7D /* PasswordConfig.swift in Sources */,
+				C9FA43BF245AC42100A19E7D /* Config.swift in Sources */,
 				C9FA439B245AAFF900A19E7D /* NeumorphicEffect.swift in Sources */,
 				C9FA439E245AB05700A19E7D /* ColorExtensions.swift in Sources */,
 				C9FA43B2245AB4E700A19E7D /* NotificationCenterExtensions.swift in Sources */,
@@ -260,8 +277,11 @@
 				C9FA43AF245AB2D900A19E7D /* FormModifier.swift in Sources */,
 				C9FA43AD245AB29E00A19E7D /* LoginView.swift in Sources */,
 				C931E3AB2452C52300B47EC2 /* ContentView.swift in Sources */,
+				C9E3483C245BA2C7006F2461 /* AuthKeys.swift in Sources */,
 				C9FA43BD245AC2C800A19E7D /* FormValidation.swift in Sources */,
 				C9FA43A8245AB25E00A19E7D /* LCButton.swift in Sources */,
+				C9E3483E245BA30E006F2461 /* User.swift in Sources */,
+				C9E34840245BC5D5006F2461 /* BiometricButtonLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +475,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9E34838245BA24C006F2461 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 19.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9E34839245BA24C006F2461 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9E34838245BA24C006F2461 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C931E39B2452C52300B47EC2 /* Project object */;
 }
