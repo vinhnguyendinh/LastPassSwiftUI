@@ -7,13 +7,14 @@
 //
 
 import SwiftUI
-import Foundation
 import Combine
 import KeychainSwift
 import CryptoKit
 import LocalAuthentication
 
 class AuthenticationManager: ObservableObject {
+    static let shared = AuthenticationManager()
+    
     // MARK: - Properties
     enum BiometricResult {
         case success
@@ -168,7 +169,7 @@ class AuthenticationManager: ObservableObject {
     }
     
     // MARK: - Initial
-    init() {
+    private init() {
         self.setupInit()
     }
     

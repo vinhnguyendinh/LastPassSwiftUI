@@ -14,4 +14,5 @@ struct AuthKeys {
     static let email = "com.lastpass.email"
     static let password = "com.lastpass.password"
     static let salt = "com.lastpass.salt"
+    static let initialLaunchKey = "com.lastpass.initialLaunch"
 }

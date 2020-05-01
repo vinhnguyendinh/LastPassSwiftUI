@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct AccountCreationView: View {
-    @EnvironmentObject private var authManager: AuthenticationManager
+    @ObservedObject private var authManager = AuthenticationManager.shared
     
     @Binding var showLogin: Bool
     @State private var formOffset: CGFloat = 0    
@@ -20,6 +20,27 @@ struct AccountCreationView: View {
             withAnimation {
                 self.formOffset = frame.height > 0 ? -200 : 0
             }
+        }
+    }
+        
+    fileprivate func createContent() -> some View {
+        VStack {
+            self.createIconView()
+            
+            VStack(spacing: 10) {
+                Text("Create Account")
+                    .font(.title)
+                    .bold()
+                
+                /// Form sign up
+                self.createFormSignUp()
+                
+                /// Sign up button
+                self.createSignUpButton()
+                
+            }.modifier(FormModifier()).offset(y: self.formOffset)
+            
+            goToLoginButton()
         }
     }
     
@@ -46,27 +67,6 @@ struct AccountCreationView: View {
         }
     }
     
-    fileprivate func createContent() -> some View {
-        VStack {
-            self.createIconView()
-            
-            VStack(spacing: 10) {
-                Text("Create Account")
-                    .font(.title)
-                    .bold()
-                
-                /// Form sign up
-                self.createFormSignUp()
-                
-                /// Sign up button
-                self.createSignUpButton()
-                
-            }.modifier(FormModifier()).offset(y: self.formOffset)
-            
-            goToLoginButton()
-        }
-    }
-    
     private func createIconView() -> some View {
         return Image("singlePass-dynamic")
             .resizable()
@@ -78,7 +78,9 @@ struct AccountCreationView: View {
     private func createFormSignUp() -> some View {
         return VStack(spacing: 30) {
             SharedTextfield(value: self.$authManager.email,header: "Email", placeholder: "Your primary email",errorMessage: authManager.emailValidation.message)
+            
             PasswordField(value: self.$authManager.password,header: "Password",  placeholder: "Make sure it's string",errorMessage: authManager.passwordValidation.message, isSecure: true)
+            
             PasswordField(value: self.$authManager.confirmedPassword,header: "Confirm Password",  placeholder: "Must match the password", errorMessage: authManager.confirmedPasswordValidation.message, isSecure: true)
             
             Text(self.authManager.similarityValidation.message).foregroundColor(Color.red)
@@ -99,6 +101,6 @@ struct AccountCreationView: View {
 
 struct SignupView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountCreationView(showLogin: .constant(false))
+        AccountCreationView(showLogin: .constant(true))
     }
 }

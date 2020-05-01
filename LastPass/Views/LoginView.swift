@@ -10,7 +10,7 @@ import SwiftUI
 import LocalAuthentication
 
 struct LoginView: View {
-    @EnvironmentObject private var authManager: AuthenticationManager
+    @ObservedObject private var authManager = AuthenticationManager.shared
     
     @Binding var showCreateAccount: Bool
     @State private var formOffset: CGFloat = 0    
@@ -207,6 +207,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(showCreateAccount: .constant(true))
+        LoginView(showCreateAccount: .constant(false))
     }
 }
