@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3A4DAB2246247D200E73E4A /* FormType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4DAB1246247D200E73E4A /* FormType.swift */; };
+		A3A4DAB4246247F400E73E4A /* FormHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4DAB3246247F400E73E4A /* FormHeader.swift */; };
+		A3A4DAB8246249D300E73E4A /* EditFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4DAB7246249D300E73E4A /* EditFormView.swift */; };
+		A3A4DABD24624CA800E73E4A /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4DABA24624CA800E73E4A /* ColorExtensions.swift */; };
+		A3A4DABE24624CA800E73E4A /* NotificationCenterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4DABB24624CA800E73E4A /* NotificationCenterExtensions.swift */; };
+		A3A4DABF24624CA800E73E4A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4DABC24624CA800E73E4A /* StringExtensions.swift */; };
 		C931E3A72452C52300B47EC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931E3A62452C52300B47EC2 /* AppDelegate.swift */; };
 		C931E3A92452C52300B47EC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931E3A82452C52300B47EC2 /* SceneDelegate.swift */; };
 		C931E3AB2452C52300B47EC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931E3AA2452C52300B47EC2 /* ContentView.swift */; };
@@ -28,7 +34,6 @@
 		C9E34854245C0A7D006F2461 /* RowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E34853245C0A7D006F2461 /* RowItem.swift */; };
 		C9E34856245C0B37006F2461 /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E34855245C0B37006F2461 /* SectionTitle.swift */; };
 		C9FA439B245AAFF900A19E7D /* NeumorphicEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA439A245AAFF900A19E7D /* NeumorphicEffect.swift */; };
-		C9FA439E245AB05700A19E7D /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA439D245AB05700A19E7D /* ColorExtensions.swift */; };
 		C9FA43A1245AB1EC00A19E7D /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA43A0245AB1EC00A19E7D /* AuthenticationView.swift */; };
 		C9FA43A4245AB21600A19E7D /* SharedTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA43A3245AB21600A19E7D /* SharedTextfield.swift */; };
 		C9FA43A6245AB24200A19E7D /* PasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA43A5245AB24200A19E7D /* PasswordField.swift */; };
@@ -36,7 +41,6 @@
 		C9FA43AB245AB28000A19E7D /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA43AA245AB28000A19E7D /* HapticFeedback.swift */; };
 		C9FA43AD245AB29E00A19E7D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA43AC245AB29E00A19E7D /* LoginView.swift */; };
 		C9FA43AF245AB2D900A19E7D /* FormModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA43AE245AB2D900A19E7D /* FormModifier.swift */; };
-		C9FA43B2245AB4E700A19E7D /* NotificationCenterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA43B1245AB4E700A19E7D /* NotificationCenterExtensions.swift */; };
 		C9FA43B6245AB61E00A19E7D /* AccountCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA43B5245AB61E00A19E7D /* AccountCreationView.swift */; };
 		C9FA43B8245AC1EF00A19E7D /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA43B7245AC1EF00A19E7D /* AuthenticationManager.swift */; };
 		C9FA43BD245AC2C800A19E7D /* FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA43BC245AC2C800A19E7D /* FormValidation.swift */; };
@@ -44,6 +48,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3A4DAB1246247D200E73E4A /* FormType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormType.swift; sourceTree = "<group>"; };
+		A3A4DAB3246247F400E73E4A /* FormHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormHeader.swift; sourceTree = "<group>"; };
+		A3A4DAB7246249D300E73E4A /* EditFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFormView.swift; sourceTree = "<group>"; };
+		A3A4DABA24624CA800E73E4A /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		A3A4DABB24624CA800E73E4A /* NotificationCenterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtensions.swift; sourceTree = "<group>"; };
+		A3A4DABC24624CA800E73E4A /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		C931E3A32452C52300B47EC2 /* LastPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LastPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C931E3A62452C52300B47EC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C931E3A82452C52300B47EC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +76,6 @@
 		C9E34853245C0A7D006F2461 /* RowItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowItem.swift; sourceTree = "<group>"; };
 		C9E34855245C0B37006F2461 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
 		C9FA439A245AAFF900A19E7D /* NeumorphicEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicEffect.swift; sourceTree = "<group>"; };
-		C9FA439D245AB05700A19E7D /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		C9FA43A0245AB1EC00A19E7D /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		C9FA43A3245AB21600A19E7D /* SharedTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTextfield.swift; sourceTree = "<group>"; };
 		C9FA43A5245AB24200A19E7D /* PasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordField.swift; sourceTree = "<group>"; };
@@ -74,7 +83,6 @@
 		C9FA43AA245AB28000A19E7D /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		C9FA43AC245AB29E00A19E7D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C9FA43AE245AB2D900A19E7D /* FormModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModifier.swift; sourceTree = "<group>"; };
-		C9FA43B1245AB4E700A19E7D /* NotificationCenterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtensions.swift; sourceTree = "<group>"; };
 		C9FA43B5245AB61E00A19E7D /* AccountCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreationView.swift; sourceTree = "<group>"; };
 		C9FA43B7245AC1EF00A19E7D /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		C9FA43BC245AC2C800A19E7D /* FormValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidation.swift; sourceTree = "<group>"; };
@@ -93,6 +101,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3A4DAB924624CA800E73E4A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A3A4DABA24624CA800E73E4A /* ColorExtensions.swift */,
+				A3A4DABB24624CA800E73E4A /* NotificationCenterExtensions.swift */,
+				A3A4DABC24624CA800E73E4A /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C931E39A2452C52300B47EC2 = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				C931E3B42452C52600B47EC2 /* Info.plist */,
-				C9FA439C245AB04300A19E7D /* Extensions */,
+				A3A4DAB924624CA800E73E4A /* Extensions */,
 				C9FA43B9245AC2AF00A19E7D /* Models */,
 				C9FA4399245AAFE600A19E7D /* Modifiers */,
 				C931E3AE2452C52600B47EC2 /* Preview Content */,
@@ -147,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				C9E3484D245C0788006F2461 /* Filter.swift */,
+				A3A4DAB1246247D200E73E4A /* FormType.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -159,16 +178,6 @@
 				C9E34846245C04A9006F2461 /* CurvedShapeModifier.swift */,
 			);
 			path = Modifiers;
-			sourceTree = "<group>";
-		};
-		C9FA439C245AB04300A19E7D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				C9FA439D245AB05700A19E7D /* ColorExtensions.swift */,
-				C9FA43B1245AB4E700A19E7D /* NotificationCenterExtensions.swift */,
-			);
-			name = Extensions;
-			path = "Ễtnsions";
 			sourceTree = "<group>";
 		};
 		C9FA439F245AB1DB00A19E7D /* Screens */ = {
@@ -187,6 +196,7 @@
 				C9FA43B5245AB61E00A19E7D /* AccountCreationView.swift */,
 				C9E3483F245BC5D5006F2461 /* BiometricButtonLabel.swift */,
 				C9E3484A245C0748006F2461 /* FilterView.swift */,
+				A3A4DAB3246247F400E73E4A /* FormHeader.swift */,
 				C9E3484F245C08B0006F2461 /* HeaderView.swift */,
 				C9FA43A7245AB25E00A19E7D /* LCButton.swift */,
 				C9E34848245C0611006F2461 /* LCSearchField.swift */,
@@ -196,6 +206,7 @@
 				C9E34853245C0A7D006F2461 /* RowItem.swift */,
 				C9E34855245C0B37006F2461 /* SectionTitle.swift */,
 				C9FA43A3245AB21600A19E7D /* SharedTextfield.swift */,
+				A3A4DAB7246249D300E73E4A /* EditFormView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -311,11 +322,10 @@
 				C9FA43BF245AC42100A19E7D /* Config.swift in Sources */,
 				C9E34852245C0A5E006F2461 /* HomeView.swift in Sources */,
 				C9FA439B245AAFF900A19E7D /* NeumorphicEffect.swift in Sources */,
-				C9FA439E245AB05700A19E7D /* ColorExtensions.swift in Sources */,
-				C9FA43B2245AB4E700A19E7D /* NotificationCenterExtensions.swift in Sources */,
 				C9FA43B8245AC1EF00A19E7D /* AuthenticationManager.swift in Sources */,
 				C9FA43B6245AB61E00A19E7D /* AccountCreationView.swift in Sources */,
 				C9FA43A1245AB1EC00A19E7D /* AuthenticationView.swift in Sources */,
+				A3A4DAB4246247F400E73E4A /* FormHeader.swift in Sources */,
 				C931E3A72452C52300B47EC2 /* AppDelegate.swift in Sources */,
 				C9E3484B245C0748006F2461 /* FilterView.swift in Sources */,
 				C931E3A92452C52300B47EC2 /* SceneDelegate.swift in Sources */,
@@ -325,11 +335,13 @@
 				C9E34842245BFAB7006F2461 /* NavBar.swift in Sources */,
 				C9FA43AB245AB28000A19E7D /* HapticFeedback.swift in Sources */,
 				C9FA43AF245AB2D900A19E7D /* FormModifier.swift in Sources */,
+				A3A4DABF24624CA800E73E4A /* StringExtensions.swift in Sources */,
 				C9E34849245C0611006F2461 /* LCSearchField.swift in Sources */,
 				C9FA43AD245AB29E00A19E7D /* LoginView.swift in Sources */,
 				C931E3AB2452C52300B47EC2 /* ContentView.swift in Sources */,
 				C9E34856245C0B37006F2461 /* SectionTitle.swift in Sources */,
 				C9E34850245C08B0006F2461 /* HeaderView.swift in Sources */,
+				A3A4DAB8246249D300E73E4A /* EditFormView.swift in Sources */,
 				C9E3483C245BA2C7006F2461 /* AuthKeys.swift in Sources */,
 				C9E34847245C04A9006F2461 /* CurvedShapeModifier.swift in Sources */,
 				C9FA43BD245AC2C800A19E7D /* FormValidation.swift in Sources */,
@@ -338,6 +350,9 @@
 				C9E3484E245C0788006F2461 /* Filter.swift in Sources */,
 				C9E3483E245BA30E006F2461 /* User.swift in Sources */,
 				C9E34840245BC5D5006F2461 /* BiometricButtonLabel.swift in Sources */,
+				A3A4DAB2246247D200E73E4A /* FormType.swift in Sources */,
+				A3A4DABE24624CA800E73E4A /* NotificationCenterExtensions.swift in Sources */,
+				A3A4DABD24624CA800E73E4A /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
