@@ -13,6 +13,10 @@
 		A3A4DABD24624CA800E73E4A /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4DABA24624CA800E73E4A /* ColorExtensions.swift */; };
 		A3A4DABE24624CA800E73E4A /* NotificationCenterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4DABB24624CA800E73E4A /* NotificationCenterExtensions.swift */; };
 		A3A4DABF24624CA800E73E4A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4DABC24624CA800E73E4A /* StringExtensions.swift */; };
+		C9010CB22468D31B00C56715 /* PasswordGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9010CB12468D31B00C56715 /* PasswordGeneratorView.swift */; };
+		C9010CB52468D47C00C56715 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9010CB42468D47C00C56715 /* CustomToggleStyle.swift */; };
+		C9010CB72468E60F00C56715 /* LinearGradientExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9010CB62468E60F00C56715 /* LinearGradientExt.swift */; };
+		C9010CB92468E69400C56715 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9010CB82468E69400C56715 /* ViewExt.swift */; };
 		C931E3A72452C52300B47EC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931E3A62452C52300B47EC2 /* AppDelegate.swift */; };
 		C931E3A92452C52300B47EC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931E3A82452C52300B47EC2 /* SceneDelegate.swift */; };
 		C931E3AB2452C52300B47EC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931E3AA2452C52300B47EC2 /* ContentView.swift */; };
@@ -54,6 +58,10 @@
 		A3A4DABA24624CA800E73E4A /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		A3A4DABB24624CA800E73E4A /* NotificationCenterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtensions.swift; sourceTree = "<group>"; };
 		A3A4DABC24624CA800E73E4A /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		C9010CB12468D31B00C56715 /* PasswordGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratorView.swift; sourceTree = "<group>"; };
+		C9010CB42468D47C00C56715 /* CustomToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggleStyle.swift; sourceTree = "<group>"; };
+		C9010CB62468E60F00C56715 /* LinearGradientExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientExt.swift; sourceTree = "<group>"; };
+		C9010CB82468E69400C56715 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
 		C931E3A32452C52300B47EC2 /* LastPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LastPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C931E3A62452C52300B47EC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C931E3A82452C52300B47EC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,10 +113,20 @@
 			isa = PBXGroup;
 			children = (
 				A3A4DABA24624CA800E73E4A /* ColorExtensions.swift */,
+				C9010CB62468E60F00C56715 /* LinearGradientExt.swift */,
 				A3A4DABB24624CA800E73E4A /* NotificationCenterExtensions.swift */,
 				A3A4DABC24624CA800E73E4A /* StringExtensions.swift */,
+				C9010CB82468E69400C56715 /* ViewExt.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C9010CB32468D47100C56715 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				C9010CB42468D47C00C56715 /* CustomToggleStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		C931E39A2452C52300B47EC2 = {
@@ -138,6 +156,7 @@
 				C9FA439F245AB1DB00A19E7D /* Screens */,
 				C9E34843245C0467006F2461 /* Shapes */,
 				C9FA43A9245AB27200A19E7D /* Shared */,
+				C9010CB32468D47100C56715 /* Styles */,
 				C9FA43B0245AB47F00A19E7D /* Supporting Files */,
 				C9E3484C245C077D006F2461 /* Utils */,
 				C9FA43A2245AB20D00A19E7D /* Views */,
@@ -195,6 +214,7 @@
 			children = (
 				C9FA43B5245AB61E00A19E7D /* AccountCreationView.swift */,
 				C9E3483F245BC5D5006F2461 /* BiometricButtonLabel.swift */,
+				A3A4DAB7246249D300E73E4A /* EditFormView.swift */,
 				C9E3484A245C0748006F2461 /* FilterView.swift */,
 				A3A4DAB3246247F400E73E4A /* FormHeader.swift */,
 				C9E3484F245C08B0006F2461 /* HeaderView.swift */,
@@ -203,10 +223,10 @@
 				C9FA43AC245AB29E00A19E7D /* LoginView.swift */,
 				C9E34841245BFAB7006F2461 /* NavBar.swift */,
 				C9FA43A5245AB24200A19E7D /* PasswordField.swift */,
+				C9010CB12468D31B00C56715 /* PasswordGeneratorView.swift */,
 				C9E34853245C0A7D006F2461 /* RowItem.swift */,
 				C9E34855245C0B37006F2461 /* SectionTitle.swift */,
 				C9FA43A3245AB21600A19E7D /* SharedTextfield.swift */,
-				A3A4DAB7246249D300E73E4A /* EditFormView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,8 +236,8 @@
 			children = (
 				C9FA43B7245AC1EF00A19E7D /* AuthenticationManager.swift */,
 				C9E3483B245BA2C7006F2461 /* AuthKeys.swift */,
-				C9FA43AA245AB28000A19E7D /* HapticFeedback.swift */,
 				C9FA43BE245AC42100A19E7D /* Config.swift */,
+				C9FA43AA245AB28000A19E7D /* HapticFeedback.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -339,18 +359,22 @@
 				C9E34849245C0611006F2461 /* LCSearchField.swift in Sources */,
 				C9FA43AD245AB29E00A19E7D /* LoginView.swift in Sources */,
 				C931E3AB2452C52300B47EC2 /* ContentView.swift in Sources */,
+				C9010CB52468D47C00C56715 /* CustomToggleStyle.swift in Sources */,
+				C9010CB22468D31B00C56715 /* PasswordGeneratorView.swift in Sources */,
 				C9E34856245C0B37006F2461 /* SectionTitle.swift in Sources */,
 				C9E34850245C08B0006F2461 /* HeaderView.swift in Sources */,
 				A3A4DAB8246249D300E73E4A /* EditFormView.swift in Sources */,
 				C9E3483C245BA2C7006F2461 /* AuthKeys.swift in Sources */,
 				C9E34847245C04A9006F2461 /* CurvedShapeModifier.swift in Sources */,
 				C9FA43BD245AC2C800A19E7D /* FormValidation.swift in Sources */,
+				C9010CB92468E69400C56715 /* ViewExt.swift in Sources */,
 				C9FA43A8245AB25E00A19E7D /* LCButton.swift in Sources */,
 				C9E34854245C0A7D006F2461 /* RowItem.swift in Sources */,
 				C9E3484E245C0788006F2461 /* Filter.swift in Sources */,
 				C9E3483E245BA30E006F2461 /* User.swift in Sources */,
 				C9E34840245BC5D5006F2461 /* BiometricButtonLabel.swift in Sources */,
 				A3A4DAB2246247D200E73E4A /* FormType.swift in Sources */,
+				C9010CB72468E60F00C56715 /* LinearGradientExt.swift in Sources */,
 				A3A4DABE24624CA800E73E4A /* NotificationCenterExtensions.swift in Sources */,
 				A3A4DABD24624CA800E73E4A /* ColorExtensions.swift in Sources */,
 			);
