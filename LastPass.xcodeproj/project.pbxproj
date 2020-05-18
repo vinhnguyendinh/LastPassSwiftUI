@@ -23,6 +23,7 @@
 		C931E3AD2452C52600B47EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C931E3AC2452C52600B47EC2 /* Assets.xcassets */; };
 		C931E3B02452C52600B47EC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C931E3AF2452C52600B47EC2 /* Preview Assets.xcassets */; };
 		C931E3B32452C52600B47EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C931E3B12452C52600B47EC2 /* LaunchScreen.storyboard */; };
+		C9D451C824727FBD00F44223 /* PasswordGeneratorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D451C724727FBD00F44223 /* PasswordGeneratorService.swift */; };
 		C9E3483A245BA24C006F2461 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C9E34839245BA24C006F2461 /* KeychainSwift */; };
 		C9E3483C245BA2C7006F2461 /* AuthKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3483B245BA2C7006F2461 /* AuthKeys.swift */; };
 		C9E3483E245BA30E006F2461 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3483D245BA30E006F2461 /* User.swift */; };
@@ -70,6 +71,7 @@
 		C931E3AF2452C52600B47EC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C931E3B22452C52600B47EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C931E3B42452C52600B47EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9D451C724727FBD00F44223 /* PasswordGeneratorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratorService.swift; sourceTree = "<group>"; };
 		C9E3483B245BA2C7006F2461 /* AuthKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKeys.swift; sourceTree = "<group>"; };
 		C9E3483D245BA30E006F2461 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C9E3483F245BC5D5006F2461 /* BiometricButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricButtonLabel.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				C9FA4399245AAFE600A19E7D /* Modifiers */,
 				C931E3AE2452C52600B47EC2 /* Preview Content */,
 				C9FA439F245AB1DB00A19E7D /* Screens */,
+				C9D451C624727F9E00F44223 /* Services */,
 				C9E34843245C0467006F2461 /* Shapes */,
 				C9FA43A9245AB27200A19E7D /* Shared */,
 				C9010CB32468D47100C56715 /* Styles */,
@@ -170,6 +173,14 @@
 				C931E3AF2452C52600B47EC2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9D451C624727F9E00F44223 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C9D451C724727FBD00F44223 /* PasswordGeneratorService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		C9E34843245C0467006F2461 /* Shapes */ = {
@@ -362,6 +373,7 @@
 				C9010CB52468D47C00C56715 /* CustomToggleStyle.swift in Sources */,
 				C9010CB22468D31B00C56715 /* PasswordGeneratorView.swift in Sources */,
 				C9E34856245C0B37006F2461 /* SectionTitle.swift in Sources */,
+				C9D451C824727FBD00F44223 /* PasswordGeneratorService.swift in Sources */,
 				C9E34850245C08B0006F2461 /* HeaderView.swift in Sources */,
 				A3A4DAB8246249D300E73E4A /* EditFormView.swift in Sources */,
 				C9E3483C245BA2C7006F2461 /* AuthKeys.swift in Sources */,

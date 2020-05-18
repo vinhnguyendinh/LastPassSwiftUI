@@ -21,6 +21,7 @@ struct EditFormView: View {
     @State private var favoriteImage = "heart"
     
     @State private var formType = FormType.Password
+    @State private var showPasswordGeneratorView = false    
     
     var body: some View {
         SubscriptionView(content: createBodyContent(), publisher: NotificationCenter.keyboardPublisher) { rect in
@@ -68,9 +69,12 @@ struct EditFormView: View {
             VStack(alignment: .leading) {
                 PasswordField(value: self.$password, header: "Password",placeholder: "Make sure the password is secure")
                 Button(action: {
+                    self.showPasswordGeneratorView.toggle()
                 }) {
                     Text("Generate password")
                         .foregroundColor(.accent)
+                }.sheet(isPresented: self.$showPasswordGeneratorView) {
+                    PasswordGeneratorView(generatedPassword: self.$password)
                 }
             }
             SharedTextfield(value: self.$website, header: "Website", placeholder: "https://")

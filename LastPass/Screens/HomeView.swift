@@ -11,16 +11,18 @@ import SwiftUI
 struct HomeView: View {
     @State var showMenu: Bool = true
     @State var showSearchField: Bool = true
+    @State var showEditFormView = false
     
     var body: some View {
-        VStack {
-            NavBar(showMenu: self.$showMenu, title: "Last pass", showSearchField: self.showSearchField)
-            
-            HeaderView { filter in
-                self.showSearchField = (filter == .AllItems)
+        ZStack(alignment: .bottomTrailing) {
+            VStack {
+                NavBar(showMenu: self.$showMenu, title: "Last pass", showSearchField: self.showSearchField)
+
+                HeaderView { filter in }
+                createList()
             }
             
-            self.createList()
+            createFloatingButton()
         }
     }
     
@@ -54,6 +56,29 @@ struct HomeView: View {
             }
         }
     } 
+    
+    fileprivate func createFloatingButton() -> some View {
+        Button(action: {
+            HapticFeedback.generate()
+            self.showEditFormView.toggle()
+        }) {
+            Image(systemName: "plus")
+                .resizable()
+                .frame(width: 20, height: 20)
+                .foregroundColor(Color.text)
+                .padding()
+                .background(Color.background)
+                .cornerRadius(35)
+                .neumorphic()
+        }.padding(30)    
+            .sheet(isPresented: self.$showEditFormView) {
+                self.createEditFormView()
+        }
+    }
+    
+    fileprivate func createEditFormView() -> some View {
+        return EditFormView(showDetails: .constant(false))
+    }
 }
 
 struct HomeView_Previews: PreviewProvider {
