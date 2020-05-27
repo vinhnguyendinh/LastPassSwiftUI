@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  LastPass
+//  LassPassClone
 //
-//  Created by Vinh Nguyen Dinh on 2020/04/24.
+//  Created by Vinh Nguyen Dinh on 2020/05/27.
 //  Copyright © 2020 Vinh Nguyen Dinh. All rights reserved.
 //
 
@@ -66,7 +66,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
         self.authManager.logout()
     }
-    
-    
 }
-
