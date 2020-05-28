@@ -127,6 +127,10 @@
 		C9505878247E471300D96FDE /* FormType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9505807247E471300D96FDE /* FormType.swift */; };
 		C9505879247E471300D96FDE /* FormType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9505807247E471300D96FDE /* FormType.swift */; };
 		C950587D247E482D00D96FDE /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C950587C247E482D00D96FDE /* KeychainSwift */; };
+		C95058BE247E4E1800D96FDE /* PasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95058BD247E4E1800D96FDE /* PasswordItem.swift */; };
+		C95058C0247E4E3200D96FDE /* NoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95058BF247E4E3200D96FDE /* NoteItem.swift */; };
+		C95058C3247E4E6500D96FDE /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95058C2247E4E6500D96FDE /* PasswordViewModel.swift */; };
+		C95058C5247E4E7100D96FDE /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95058C4247E4E7100D96FDE /* NoteViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,6 +202,10 @@
 		C9505804247E471200D96FDE /* PasswordGeneratorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordGeneratorService.swift; sourceTree = "<group>"; };
 		C9505806247E471300D96FDE /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		C9505807247E471300D96FDE /* FormType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormType.swift; sourceTree = "<group>"; };
+		C95058BD247E4E1800D96FDE /* PasswordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordItem.swift; sourceTree = "<group>"; };
+		C95058BF247E4E3200D96FDE /* NoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItem.swift; sourceTree = "<group>"; };
+		C95058C2247E4E6500D96FDE /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
+		C95058C4247E4E7100D96FDE /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +257,7 @@
 		C95057A4247E46DD00D96FDE /* LassPassClone */ = {
 			isa = PBXGroup;
 			children = (
+				C95058C1247E4E5600D96FDE /* ViewModels */,
 				C950587A247E476500D96FDE /* Supporting Files */,
 				C95057E2247E471200D96FDE /* Extensions */,
 				C95057E8247E471200D96FDE /* Models */,
@@ -335,8 +344,10 @@
 		C95057E8247E471200D96FDE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C95057E9247E471200D96FDE /* User.swift */,
 				C95057EA247E471200D96FDE /* FormValidation.swift */,
+				C95058BF247E4E3200D96FDE /* NoteItem.swift */,
+				C95058BD247E4E1800D96FDE /* PasswordItem.swift */,
+				C95057E9247E471200D96FDE /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -409,6 +420,15 @@
 				C95057A9247E46DD00D96FDE /* LassPassClone.xcdatamodeld */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C95058C1247E4E5600D96FDE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C95058C4247E4E7100D96FDE /* NoteViewModel.swift */,
+				C95058C2247E4E6500D96FDE /* PasswordViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,6 +574,7 @@
 				C95057A8247E46DD00D96FDE /* SceneDelegate.swift in Sources */,
 				C9505871247E471300D96FDE /* PasswordGeneratorService.swift in Sources */,
 				C9505814247E471300D96FDE /* NeumorphicEffect.swift in Sources */,
+				C95058BE247E4E1800D96FDE /* PasswordItem.swift in Sources */,
 				C950581A247E471300D96FDE /* FormModifier.swift in Sources */,
 				C9505874247E471300D96FDE /* Filter.swift in Sources */,
 				C9505829247E471300D96FDE /* ViewExt.swift in Sources */,
@@ -571,12 +592,15 @@
 				C9505832247E471300D96FDE /* PasswordField.swift in Sources */,
 				C950582C247E471300D96FDE /* User.swift in Sources */,
 				C9505862247E471300D96FDE /* Config.swift in Sources */,
+				C95058C5247E4E7100D96FDE /* NoteViewModel.swift in Sources */,
+				C95058C0247E4E3200D96FDE /* NoteItem.swift in Sources */,
 				C950583E247E471300D96FDE /* PasswordGeneratorView.swift in Sources */,
 				C9505811247E471300D96FDE /* ContentView.swift in Sources */,
 				C9505826247E471300D96FDE /* NotificationCenterExtensions.swift in Sources */,
 				C9505859247E471300D96FDE /* LCButton.swift in Sources */,
 				C950580E247E471300D96FDE /* AuthenticationView.swift in Sources */,
 				C950580B247E471300D96FDE /* HomeView.swift in Sources */,
+				C95058C3247E4E6500D96FDE /* PasswordViewModel.swift in Sources */,
 				C9505808247E471300D96FDE /* CurvedShape.swift in Sources */,
 				C950585C247E471300D96FDE /* EditFormView.swift in Sources */,
 				C9505835247E471300D96FDE /* FormHeader.swift in Sources */,
