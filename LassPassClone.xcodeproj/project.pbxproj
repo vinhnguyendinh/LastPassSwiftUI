@@ -131,6 +131,9 @@
 		C95058C0247E4E3200D96FDE /* NoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95058BF247E4E3200D96FDE /* NoteItem.swift */; };
 		C95058C3247E4E6500D96FDE /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95058C2247E4E6500D96FDE /* PasswordViewModel.swift */; };
 		C95058C5247E4E7100D96FDE /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95058C4247E4E7100D96FDE /* NoteViewModel.swift */; };
+		C9BB8F2324862E78004BCE53 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BB8F2224862E78004BCE53 /* CoreDataManager.swift */; };
+		C9BB8F2424862E7D004BCE53 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BB8F2224862E78004BCE53 /* CoreDataManager.swift */; };
+		C9BB8F2524862E7D004BCE53 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BB8F2224862E78004BCE53 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -206,6 +209,7 @@
 		C95058BF247E4E3200D96FDE /* NoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItem.swift; sourceTree = "<group>"; };
 		C95058C2247E4E6500D96FDE /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
 		C95058C4247E4E7100D96FDE /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
+		C9BB8F2224862E78004BCE53 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,6 +400,7 @@
 		C9505803247E471200D96FDE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C9BB8F2224862E78004BCE53 /* CoreDataManager.swift */,
 				C9505804247E471200D96FDE /* PasswordGeneratorService.swift */,
 			);
 			path = Services;
@@ -601,6 +606,7 @@
 				C950580E247E471300D96FDE /* AuthenticationView.swift in Sources */,
 				C950580B247E471300D96FDE /* HomeView.swift in Sources */,
 				C95058C3247E4E6500D96FDE /* PasswordViewModel.swift in Sources */,
+				C9BB8F2324862E78004BCE53 /* CoreDataManager.swift in Sources */,
 				C9505808247E471300D96FDE /* CurvedShape.swift in Sources */,
 				C950585C247E471300D96FDE /* EditFormView.swift in Sources */,
 				C9505835247E471300D96FDE /* FormHeader.swift in Sources */,
@@ -652,6 +658,7 @@
 				C9505878247E471300D96FDE /* FormType.swift in Sources */,
 				C9505854247E471300D96FDE /* LCSearchField.swift in Sources */,
 				C9505845247E471300D96FDE /* SharedTextfield.swift in Sources */,
+				C9BB8F2524862E7D004BCE53 /* CoreDataManager.swift in Sources */,
 				C95057C0247E46DE00D96FDE /* LassPassCloneTests.swift in Sources */,
 				C9505860247E471300D96FDE /* AuthenticationManager.swift in Sources */,
 				C9505863247E471300D96FDE /* Config.swift in Sources */,
@@ -697,6 +704,7 @@
 				C9505879247E471300D96FDE /* FormType.swift in Sources */,
 				C9505855247E471300D96FDE /* LCSearchField.swift in Sources */,
 				C9505846247E471300D96FDE /* SharedTextfield.swift in Sources */,
+				C9BB8F2424862E7D004BCE53 /* CoreDataManager.swift in Sources */,
 				C95057CB247E46DF00D96FDE /* LassPassCloneUITests.swift in Sources */,
 				C9505861247E471300D96FDE /* AuthenticationManager.swift in Sources */,
 				C9505864247E471300D96FDE /* Config.swift in Sources */,
